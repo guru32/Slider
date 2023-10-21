@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html>
-				<head>
-								<style>
-												#slideshow { margin: 50px auto; position: relative; width: 300px; height: 500px; padding: 10px;} #slideshow > div { position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; }
-												img{
-												height:80%;
-												width:80%rem;
-												}
-								</style>
-								<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
-												
-														</script>
-				</head>
+
+<head>
+    <style>
+        #slideshow {
+            margin:0%;
+           
+            width:auto;
+            height:auto;
+            
+            background-color: black;
+        }
+
+        #slideshow>div {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        img {
+            height:30rem;
+            width:30rem;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+
+        </script>
+</head>
 
 <body>
-<div id="slideshow"> <div> <img src="https://unsplash.com/photos/united-states-circa-1960s-man-in-library-XqePqNS5Kc4"> </div> <div> <img src="https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc"> </div> <div> <img src="https://unsplash.com/photos/open-book-on-top-of-several-stacked-books-9DaOYUYnOls" alt="h"></img> </div> </div>
-<script>
-				$("#slideshow > div:gt(0)").hide(); setInterval(function() { $('#slideshow > div:first') .fadeOut(3000) .next() .fadeIn(3000) .end() .appendTo('#slideshow'); }, 4000);
-</script>
+    <h1 style="text-align: center;">The Gallery of images</h1>
+    <div id="slideshow">
+        <div> <img src="https://images.unsplash.com/photo-1435777940218-be0b632d06db?auto=format&fit=crop&q=80&w=1631&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="i"></div>
+        <div> <img
+                src="https://images.unsplash.com/photo-1478194409487-fa5c1eb18622?auto=format&fit=crop&q=80&w=1497&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="j">
+        </div>
+        <div> <img src="https://images.unsplash.com/photo-1487564149407-9fb3522e2ceb?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="h"></div>
+    </div>
+    <script>
+        $("#slideshow > div:gt(0)").hide(); setInterval(function () { $('#slideshow > div:first').fadeOut(5000).next().fadeIn(5000).end().appendTo('#slideshow'); }, 4000);
+    </script>
 </body>
+
 </html>
+
+</img>
